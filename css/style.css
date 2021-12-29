@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/************** form styles begin ***************/
+
+.form {
+  width: 100%;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.form-wrap {
+  width: 400px;
+  position: relative;
+}
+
+.form-title {
+  color: #222;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.form input[type="text"] {
+  width: 100%;
+  display: block;
+  outline: none;
+  margin: 12px 0;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid rgb(230, 216, 216);
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form input[type="text"]::placeholder {
+  color: rgb(230, 216, 216);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 10px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.btn-submit {
+  background-color: green;
+  margin-right: 12px;
+}
+
+.btn-submit:hover {
+  background-color: rgb(2, 104, 2);
+}
+
+.btn-cancel {
+  background-color: red;
+  margin-right: 12px;
+}
+
+.btn-cancel:hover {
+  background-color: rgb(209, 7, 7);
+}
+
+.form-text {
+  margin-top: 20px;
+  padding: 50px 10px;
+  border: 2px solid rgb(230, 216, 216);
+  border-top: 0;
+}
+
+.form-text > span {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  margin: 10px 0;
+}
+
+.form-success {
+  height: 20px;
+  line-height: 20px;
+  margin: 7px 0;
+  animation: successAnimation 2s linear infinite alternate;
+  display: inline-block;
+}
+
+@keyframes successAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(220px);
+  }
+}
+@media (max-width: 500px) {
+  .form-container {
+    padding: 30px 15px;
+  }
+  .form-title {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  @keyframes successAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(70px);
+    }
+    100% {
+      transform: translateX(140px);
+    }
+  }
+}
+@media (max-width: 320px) {
+  .form-title {
+    font-size: 15px;
+  }
+  @keyframes successAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(40px);
+    }
+    100% {
+      transform: translateX(80px);
+    }
+  }
+} 
+/************** form styles end ***************/
+
+.b {
+  border: 2px dashed red;
+}
